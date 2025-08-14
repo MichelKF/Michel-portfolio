@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Michel Antunes - Portfólio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #65C1F6;
+      color: #222;
+      padding: 40px 15px;
+      margin: 0;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .dark-mode {
+      background-color: #121212;
+      color: #eee;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 30px 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .dark-mode .container {
+      background-color: #1e1e1e;
+    }
+
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      margin-bottom: 5px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-weight: normal;
+      color: #555;
+    }
+
+    .dark-mode h2 {
+      color: #ccc;
+    }
+
+    button {
+      margin: 20px 0;
+      padding: 10px 25px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      border-radius: 6px;
+      background-color: #333;
+      color: white;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+
+    .whatsapp-btn,
+    .email-btn {
+      display: block;
+      width: fit-content;
+      margin: 15px auto;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .whatsapp-btn {
+      background-color: #25d366;
+    }
+
+    .whatsapp-btn:hover {
+      background-color: #1ebe5d;
+    }
+
+    .email-btn {
+      background-color: #0072c6;
+    }
+
+    .email-btn:hover {
+      background-color: #005fa3;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    .dark-mode footer {
+      color: #aaa;
+    }
+
+    .section {
+      text-align: left;
+      max-width: 500px;
+      margin: 30px auto 0;
+    }
+
+    .section h3 {
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    .dark-mode .section h3 {
+      border-color: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="michelperfil.jpg" alt="Foto de Michel" />
+    <h1>Michel Antunes</h1>
+    <h2>Desenvolvedor Front-End | Freelancer</h2>
+
+    <p> Formado em Análise de Sistemas, com foco em criação de sites modernos, responsivos e funcionais. 
+    Atendo projetos como freelancer e estou disponível para novos desafios.</p>
+
+    <button onclick="alternarTema()">Modo Escuro</button>
+
+    <a href="https://wa.me/5515997766004" target="_blank" class="whatsapp-btn">
+      💬 Fale comigo no WhatsApp
+    </a>
+
+    <a href="mailto:michelantunes_kf@hotmail.com" class="email-btn">
+      📧 Enviar e-mail
+    </a>
+
+    <div class="section">
+      <h3>💼 Serviços:</h3>
+      <ul>
+        <li>Criação de sites profissionais</li>
+        <li>Landing pages para vendas</li>
+        <li>Portfólios e páginas pessoais</li>
+        <li>Manutenção e ajustes em sites existentes</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>📁 Meus projetos:</h3>
+      <ul>
+        <li><a href="#" target="_blank">Site de exemplo 1 (em breve)</a></li>
+        <li><a href="#" target="_blank">Landing page para produto (em breve)</a></li>
+      </ul>
+    </div>
+
+    <footer>
+      © 2025 Michel Antunes. Todos os direitos reservados.
+    </footer>
+  </div>
+
+  <script>
+    function alternarTema() {
+      document.body.classList.toggle("dark-mode");
+      const btn = document.querySelector("button");
+      btn.textContent = document.body.classList.contains("dark-mode") ? "Modo Claro" : "Modo Escuro";
+    }
+  </script>
+</body>
+</html>
